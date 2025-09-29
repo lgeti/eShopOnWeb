@@ -19,9 +19,6 @@ jobs:
     steps:
     #checkout the repository
     - uses: actions/checkout@v4
-    #restore dependencies
-    - name: Restore dependencies
-      run: dotnet restore ./eShopOnWeb.sln
     #prepare runner for desired .net version SDK
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
